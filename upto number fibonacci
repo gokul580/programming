@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main()
+{
+    int i,t1=0,t2=1,n,nt;
+    printf("enter a number:");
+    scanf("%d",&n);
+    printf("the fibonacci series is: %d %d",t1,t2);
+    nt=t1+t2;
+    while(nt<=n){
+        
+        printf(" %d", nt);
+        t1=t2;
+        t2=nt;
+        nt=t1+t2;
+
+    }
+    return 0;
+    
+}
