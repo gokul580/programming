@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main() {
+    int arr[5],i,count =0;
+    printf("enter the array elements:");
+    for(i=0;i<5;i++)
+    scanf("%d",&arr[i]);
+    for(i=0;i<5;i++){
+        count=count+arr[i];
+    }
+    printf("the sum of the array is %d",count);
+    return 0;
+}
