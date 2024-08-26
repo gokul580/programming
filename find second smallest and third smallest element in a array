@@ -18,7 +18,7 @@ int main() {
     
     }
     sec_small=big;
-    third_small=sec_small;
+    third_small=big;
     for(i=0;i<5;i++){
         if(arr[i] > small && arr[i] <sec_small){
             sec_small=arr[i];
