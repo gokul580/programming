@@ -5,17 +5,17 @@ int main() {
     printf("enter the array elements:");
     for(j=0;j<8;j++)
     scanf("%d",&arr[j]);
-    for(j=0;j<8;j++){
-        for(i=0;i<8/2-j;i++){
+    for(j=0;j<8/2-1;j++){
+        for(i=0;i<8/2-1-j;i++){
             if(arr[i]>arr[i+1]){
                 temp=arr[i];
                 arr[i]=arr[i+1];
                 arr[i+1]=temp;
         }
     }}
-    for(j=8/2;j<8;j++){
-        for(i=8/2;i<8-(j-4);i++){
-            if(arr[i]>arr[i+1]){
+    for(j=8/2;j<8-1;j++){
+        for(i=8/2;i<8-1-(j-4);i++){
+            if(arr[i]<arr[i+1]){
                 temp=arr[i];
                 arr[i]=arr[i+1];
                 arr[i+1]=temp;
